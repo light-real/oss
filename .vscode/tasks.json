@@ -1,9 +1,9 @@
 {
     "tasks": [
         {
-            "type": "cppbuild",
-            "label": "C/C++: gcc.exe 生成活动文件",
-            "command": "D:/Data/CodingData/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/bin/gcc.exe",
+            "type": "shell",
+            "label": "task g++",
+            "command": "D:\\Data\\CodingData\\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\\mingw64\\bin\\g++.exe",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
@@ -13,7 +13,7 @@
                 ""
             ],
             "options": {
-                "cwd": "D:/Data/CodingData/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/bin"
+                "cwd": "D:\\Data\\CodingData\\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\\mingw64\\bin"
             },
             "problemMatcher": [
                 "$gcc"

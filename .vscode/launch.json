@@ -2,14 +2,35 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "g++.exe build and debug active file",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": true,
+      "MIMode": "gdb",
+      "miDebuggerPath": "D:\\Data\\CodingData\\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\\mingw64\\bin\\gdb.exe",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "task g++"
+    },
+    {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
       "request": "launch",
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/Data/CodingData/common",
-      "program": "d:/Data/CodingData/common/build/Debug/outDebug",
+      "cwd": "d:/Data/CodingData/common/synchronization",
+      "program": "d:/Data/CodingData/common/synchronization/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
