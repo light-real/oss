@@ -23,3 +23,22 @@ void printTwoVec(const std::vector<std::vector<T>> &vec)
         printVec(v);
     }
 }
+
+template <typename T>
+void printVecWithoutBlank(const std::vector<T> vec)
+{
+    for (int i = 0; i < vec.size() - 1; i++)
+    {
+        cout << vec[i] << " ";
+    }
+    cout << vec[vec.size() - 1] << endl;
+}
+
+template <typename T>
+void printTwoVecWithoutBlank(const std::vector<std::vector<T>> &vec)
+{
+    for (auto &v : vec)
+    {
+        printVecWithoutBlank(v);
+    }
+}
